@@ -5,6 +5,15 @@ let circleCount = 0;
 let headerCount = 0;
 
 circle.addEventListener('click', () => {
+
+    // Add the shake class
+    circle.classList.add('shake');
+    
+    // Remove the shake class after the animation ends
+    setTimeout(() => {
+        circle.classList.remove('shake');
+    }, 500);
+
     if (headerCount < 16) {
         // Trigger vibration for each click
         if (navigator.vibrate) {

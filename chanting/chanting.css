@@ -27,31 +27,14 @@ h1 {
     text-align: center;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
 }
-h1 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-.circle {
-    width: 200px;
-    height: 200px;
-    background-color: #4CAF50;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: white;
-    cursor: pointer;
-    user-select: none;
-    text-align: center;
+
+.shake {
+    animation: shake 0.3s;
 }
