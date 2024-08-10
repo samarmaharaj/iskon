@@ -53,6 +53,11 @@
                     circleCount = 0;
                     headerCount++;
                     header.textContent = headerCount;
+
+                    // Trigger vibration for 200 milliseconds
+                    if (navigator.vibrate) {
+                        navigator.vibrate(200);
+                    }
                 }
                 circle.textContent = circleCount;
             }
