@@ -1,0 +1,22 @@
+{
+    "name": "My Web App",
+    "short_name": "WebApp",
+    "description": "A description of your app",
+    "start_url": "/chanting.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+      {
+        "src": "https://www.bhagwanbhajan.com/shree-krishna/shree-krishna-hd-wallpaper/lord-krishna-images-in-hd.jpg",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "https://banner.holidaypng.com/20191021/cgo/geisha-black-hair-art-for-janmashtami-5dad274bcf3a66.09118291.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
