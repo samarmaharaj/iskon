@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            cursor: pointer;
+            user-select: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>0</h1>
+    <div class="circle">0</div>
+
+    <script>
+        const circle = document.querySelector('.circle');
+        const header = document.querySelector('h1');
+        let circleCount = 0;
+        let headerCount = 0;
+
+        circle.addEventListener('click', () => {
+            if (headerCount < 16) {
+                circleCount++;
+                if (circleCount === 108) {
+                    circleCount = 0;
+                    headerCount++;
+                    header.textContent = headerCount;
+                }
+                circle.textContent = circleCount;
+            }
+        });
+    </script>
+
+</body>
+</html>
