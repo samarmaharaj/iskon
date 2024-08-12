@@ -2,7 +2,7 @@
     "name": "My Web App",
     "short_name": "WebApp",
     "description": "A description of your app",
-    "start_url": "/chanting.html",
+    "start_url": "chanting.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4CAF50",
